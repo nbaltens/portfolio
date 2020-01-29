@@ -91,6 +91,12 @@ border: solid 1px #fff;
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+	display: -webkit-box;      
+	display: -moz-box;         
+	display: -ms-flexbox;     
+	display: -webkit-flex;     
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .grid figure {
