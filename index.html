@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="library/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Noah's Portfolio Page</title>
 </head>
@@ -20,24 +21,22 @@
 <header>
     <nav class="nav-wrapper transparent">
       <div class="container">
-        <a href="#" class="brand-logo nav-logo">Noah Baltensperger</a>
+        <h6 class="brand-logo nav-logo" id="logo-name">Noah Baltensperger</h6>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
           <i class="material-icons hamburger">menu</i>
         </a>
         <ul class="right hide-on-med-and-down nav-items">
-          <li><a href="#">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="./img/Baltensperger_Noah_Resume.pdf" target="blank">Resume</a></li>
           <li><a href="https://github.com/nbaltens" target="blank" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Github"> 
             <i class="fa fa-github"></i>
           </a></li>
-          <li><a href="https://www.linkedin.com/in/noah-baltensperger-6a3267108?trk=people-guest_profile-result-card_result-card_full-click" target="blank" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Linkedin">
-            <i class="fa fa-linkedin"></i>
-          </a></li>
         </ul>
-        <ul class="sidenav cyan lighten-5" id="mobile-menu">
+        <ul class="sidenav black" id="mobile-menu">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="./img/Baltensperger_Noah_Resume.pdf" target="blank">Resume</a></li>
         </ul>
       </div>
     </nav>
@@ -49,12 +48,11 @@
   </header>
 
   <!-- PORTFOLIO -->
-  <section class="projects">
+  <section class="projects invisible-project row js--wp-1">
     <h2 class="project-heading" id="projects">PORTFOLIO</h2>
     
     <div class="content">
             <div class="grid">
-
                 <figure class="fig">
                     <img src="./img/weatherApp.png" alt="weather"/>
                     <figcaption>
@@ -64,31 +62,46 @@
                         <a href="./projects/weather-app" target="blank"><button class="project-btn">View</button></a>
                         </a>
                       </p>
-                      <p class="description">HTML, CSS, React, Json, API</p>
+                      <p class="description">HTML, CSS, React, API</p>
                     </figcaption>     
                   </figure>
-
+                  
                   <figure class="fig">
-                      <img src="./img/wave.png" alt="surfer"/>
+                      <img src="./img/paoaone.png" alt="surfer"/>
                       <figcaption>
-                        <h2>Shopping Cart <span>App</span></h2>
+                        <h2>Ecommerce<span>Website</span></h2>
                         <p class="icon-links">
-                          <a href="https://github.com/nbaltens/Shopping-Cart" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
-                          <a href="./projects/ecomerce/main.html" target="blank"><button class="project-btn">View</button></a>
+                          <a href="https://github.com/nbaltens/Paoa" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
+                          <a href="./projects/ecomerce/index.html" target="blank"><button class="project-btn">View</button></a>
                         </p>
                         <p class="description">HTML, CSS, Javascript</p>
                       </figcaption>     
                     </figure>
-
+                    
+                    
                     <figure class="fig">
-                        <img src="./img/form_img.png" alt="login_img3"/>
+                    <img src="./img/film_finder_img.png" alt="weather"/>
+                    <figcaption>
+                      <h2>Film-Finder<span>App</span></h2>
+                      <p class="icon-links">
+                        <a href="https://github.com/nbaltens/Film-Finder" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
+                        <a href="./projects/film_finder" target="blank"><button class="project-btn">View</button></a>
+                        </a>
+                      </p>
+                      <p class="description">HTML, CSS, React, API</p>
+                    </figcaption>     
+                  </figure>
+                  
+                    
+                    <figure class="fig">
+                        <img src="./img/form_img.png" alt="login_img"/>
                         <figcaption>
                           <h2>Form <span>Validation</span></h2>
                           <p class="icon-links">
                             <a href="https://github.com/nbaltens/Form-Validation" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
                             <a href="./projects/form_validation/main.html" target="blank"><button class="project-btn">View</button></a>
                           </p>
-                          <p class="description">HTML, CSS, Javascript</p>
+                          <p class="description">HTML, CSS, Javascript, PHP</p>
                         </figcaption>     
                       </figure>
 
@@ -100,20 +113,32 @@
                             <a href="https://github.com/nbaltens/Pizza-Restaurant" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
                             <a href="./projects/resturaunt_website/main.html" target="blank"><button class="project-btn">View</button></a>
                           </p>
-                          <p class="description">HTML, CSS, Javascript,Google API </p>
+                          <p class="description">HTML, CSS, Javascript, API </p>
+                        </figcaption> 
+                        
+                      </figure>
+
+                      <figure class="fig">
+                        <img src="./img/color_game.png" alt="Color-Game"/>
+                        <figcaption>
+                          <h2>Color<span>Game</span></h2>
+                          <p class="icon-links">
+                            <a href="https://github.com/nbaltens/Color-Guessing-Game" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
+                            <a href="./projects/color-game/colorgame.html" target="blank"><button class="project-btn">View</button></a>
+                          </p>
+                          <p class="description">HTML, CSS, Javascript </p>
                         </figcaption>     
                       </figure>
 
                       <figure class="fig">
-                        <img src="./img/directory.png" alt="directory"/>
+                        <img src="./img/directory.png" alt="Directory"/>
                         <figcaption>
-                          <h2>Employee<span>Directory</span></h2>
+                          <h2>Search<span>Directory</span></h2>
                           <p class="icon-links">
                             <a href="https://github.com/nbaltens/Directory-Search" target="blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a>
                             <a href="./projects/employee directory/index.html" target="blank"><button class="project-btn">View</button></a>
-                            </a>
                           </p>
-                          <p class="description">HTML, CSS, Jquery, Json, API, Ajax</p>
+                          <p class="description">HTML, CSS, Jquery, API </p>
                         </figcaption>     
                       </figure>
             </div>
@@ -122,52 +147,54 @@
 </section>
 
   <!-- ABOUT -->
-  <section class="section container">
-    <div class="row">
-      <div class="col s12 about-section">
-        <h4 class="indigo-text text-darken-4 center-align about-header">Development Tools</h4>
+  <section" class="section container">
+        <h4 class="center-align about-header">Development Tools</h4>
         <ul class="skills center-align">
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>Javascript</li>
+          <li>Javascript/ES6</li>
           <li>Jquery</li>
           <li>React</li>
-          <li>ES6</li>
           <li>PHP</li>
-          <li>Bootstrap</li>
           <li>Sass</li>
+          <li>Bootstrap</li>
           <li>Materialize</li>
+          <li>Photoshop</li>
           <li>Illustrator</li>
-          <li>API's</li>
           <li>NPM</li>
-          <li>GIT/Github</li>
-      </ul>
-      </div>
-      </div>
-    </div>
+          <li>GIT</li>
+      </ul> 
+      
+      <div class="skill-logo-container js--wp-2">
+        <img class="skill-logo" src="img/logo/h.png">
+        <img class="skill-logo" src="img/logo/cs.png">
+        <img class="skill-logo" src="img/logo/js.png">
+        <img class="skill-logo" src="img/logo/jquery.png">
+        <img class="skill-logo" src="img/logo/resct.png">
+        <img class="skill-logo" src="img/logo/php.png">
+        <img class="skill-logo" src="img/logo/sass.png">
+        <img class="skill-logo" src="img/logo/boot.png">
+        <img class="skill-logo" src="img/logo/adobee.png">
+        <img class="skill-logo" src="img/logo/git.png">
+     </div>
   </section>
   
-  
-
   <!-- footer -->
-  <footer class="page-footer grey darken-3">
+  <footer class="page-footer">
     <div class="container" id="contact">
         <div class="footer-contact">
           <h5 class="white-text">Connect</h5>
-          <ul>
+          <ul class="foot-social">
             <li><i class="fa fa-envelope contact-icon"></i>nbalten@gmail.com</li>
             <li><i class="fa fa-phone-square contact-icon"></i>(401) 835-0737</li>
-            <li><a class="footer-social" href="https://www.linkedin.com/in/noah-baltensperger-6a3267108?trk=people-guest_profile-result-card_result-card_full-click" target="blank">LinkedIn</a></li>
-            <li><a class="footer-social" href="https://github.com/nbaltens"target="blank">GitHub</a></li>
+            <li style="padding-bottom:10px;"><a class="footer-social" href="https://github.com/nbaltens"target="blank">GitHub</a></li>
           </ul>
         </div>
-    </div>
-    <div class="footer-copyright grey darken-4">
-      <div class="container center-align">&copy; NoahBaltensperger 2019</div>
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="library/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </body>
